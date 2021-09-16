@@ -9,12 +9,12 @@ public class Octal {
 
 	public static String octal(int num) {
 		StringBuilder answer = new StringBuilder();
-		while(num>0) {
-			System.out.println(num + "/8" + " = " + (num / 8) + " R-" + (num%8));
-			answer.append(num%8);
+		while (num > 0) {
+			System.out.println(num + "/8" + " = " + (num / 8) + " R-" + (num % 8));
+			answer.append(num % 8);
 			num /= 8;
 		}
-		
+
 		return answer.reverse().toString();
 	}
 
